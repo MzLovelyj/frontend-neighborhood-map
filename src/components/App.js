@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import scriptLoader from "react-async-script-loader";
-import { MAP_KEY } from "../data/credentials";
+import { MAP_KEY } from "/.env";
 import { mapStyles } from "../data/mapStyles.js";
 import ListView from "./ListView";
 import spinner from "../images/circles-loader.svg";
