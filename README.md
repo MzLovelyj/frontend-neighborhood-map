@@ -28,19 +28,18 @@ Final project for Udacity's Front End Course. Build a Rect App From Scratch.
     ├── data
     │   ├── credentials.js
     │   ├── mapStyles.js
-    ├── pages
-    │   ├── ListBooks.js
-    │   ├── Search.js
-    ├── reducers
-    │   ├── index.js
-    ├──utils
-        ├──helpers.js # A JavaScript API for the provided Udacity backend. Instructions for the methods are below.
-        ├── SearchTerm.js
-    ├── icons # Helpful images for your app. Use at your discretion.
-    │   ├── add.svg
-    │   ├── arrow-back.svg
-    │   └── arrow-drop-down.svg
+    ├── images
+    │   ├── beer-marker.png
+    │   ├── beer-marker24.png
+    │   ├── circles-loader.svg
+    │   ├── foursquare-button.png
+    │   ├── foursquare-button.png
+    │   ├── foursquare.png
+    │   ├── no-image-available.png
+    ├── utils
+    │   ├── helpers.js
     ├── index.css # Global styles.
+    ├── serviceWorker.js
 ```
 
 Remember that good React design practice is to create new JS files for each component and use import/require statements to include them where they are needed.
