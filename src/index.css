@@ -27,9 +27,9 @@ body {
 
 .app-title {
   color: #153B2E;
-  font: bold 34px/42px  'Catamaran', sans-serif;
+font: bold 34px/42px; 
+  font-family: 'Catamaran', sans-serif;
   text-align: center;
-;
   margin: 10px 0;
 }
 

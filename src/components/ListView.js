@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import Place from "./BeerSpots";
-import { getFSLocations, getFSDetails } from "../apis/foursquare";
+import { getFSLocations, getFSDetails } from "../api/foursquare";
 import {
   checkData,
   buildInfoContent,
   buildErrorContent
 } from "../utils/helpers";
-import foodIcon from "../images/beer-marker.png";
+import beerIcon from "../images/beer-marker.png";
 import spinner from "../images/circles-loader.svg";
 import PropTypes from "prop-types";
 
@@ -61,7 +61,7 @@ class ListView extends Component {
         map,
         title: location.name,
         id: location.id,
-        icon: foodIcon
+        icon: beerIcon
       });
 
       bounds.extend(position);
