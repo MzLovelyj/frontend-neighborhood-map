@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from "./components/App";
 import * as serviceWorker from './serviceWorker';
+//Load our new Envirmoment  variables for the .env file in dev
+//this is for Dev only, but in production it just doesn't do anything
+require('dotenv').config();
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
