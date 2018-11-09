@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import scriptLoader from "react-async-script-loader";
-import { MAP_KEY } from "/src/data/credentials.js";
-import { mapStyles } from "/src/data/mapStyles.js";
+import { MAP_KEY } from "/data/credentials.js";
+import { mapStyles } from "/data/mapStyles.js";
 import ListView from "./ListView";
 import spinner from "../images/circles-loader.svg";
 import foursquare from "../images/foursquare.png";
