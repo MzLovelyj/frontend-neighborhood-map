@@ -1,4 +1,4 @@
-/**Used the following link to style tghe map:
+/**Used the following link to style the map:
  * https://developers.google.com/maps/documentation/javascript/styling
  *  */
 export const mapStyles = [
