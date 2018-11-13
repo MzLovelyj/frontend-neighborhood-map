@@ -35,7 +35,7 @@ export const checkData = (marker, data) => {
 };
 
 
-// build infowindow content
+// This builds Beer/ Spor infowindow content on map
 export const buildInfoContent = marker => {
   marker.infoContent = `<div class="place">
                       <img class="place-photo" src=${marker.photo} alt="${marker.title}">

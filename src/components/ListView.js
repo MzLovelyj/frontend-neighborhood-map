@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Place from "./BeerSpots";
-import { getFSLocations, getFSDetails } from "../api/foursquare";
+import BeerSpots from './BeerSpots';
+import { getFSLocations, getFSDeets } from "../api/foursquare";
 import {
   checkData,
   buildInfoContent,
@@ -71,10 +71,10 @@ class ListView extends Component {
 
         // bounce marker three times then stop
         marker.setAnimation(window.google.maps.Animation.BOUNCE);
-        setTimeout(() => marker.setAnimation(null), 2100);
+        setTimeout(() => marker.setAnimation(null), 1900);
 
         // get venue details and display in infowindow
-        getFSDetails(marker.id)
+        getFSDeets(marker.id)
           .then(data => {
             checkData(marker, data);
             buildInfoContent(marker);
@@ -134,7 +134,7 @@ class ListView extends Component {
     if (apiReturned && !filteredPlaces) {
       return <div> Foursquare API request failed. Please try again later.</div>;
 
-      // API request returns successfully
+      // Foursqaure API request return successfully will display
     } else if (apiReturned && filteredPlaces) {
       return (
         <div className="list-view">
@@ -149,9 +149,9 @@ class ListView extends Component {
             tabIndex={listOpen ? "0" : "-1"}
           />
           {apiReturned && filteredPlaces.length > 0 ? (
-            <ul className="places-list">
+            <ul className="beerList">
               {filteredPlaces.map((place, id) => (
-                <Place key={place.id} place={place} listOpen={listOpen} />
+                <BeerSpots key={place.id} place={place} listOpen={listOpen} />
               ))}
             </ul>
           ) : (
